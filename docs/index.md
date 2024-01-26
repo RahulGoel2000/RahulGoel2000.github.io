@@ -1,16 +1,16 @@
 ---
-title: ECE 5960 - Design and Implementation of Fast Robots
+title: ECE 5160 - Fast Robots
 ---
-# Author: Swapnil Barot (NetID: spb228)
+# Author: Rahul Goel (NetID: rg764)
 ---
 
 ## About Me
-I am a current Master of Engineering student at Cornell University majoring in Electrical and Computer Engineeering. I received my Bachelor of Science in Electrical and Computer Engineering from New York Institute of Technology. My area of interests include embedded systems, microcontrollers, hardware, and power systems. I can be reached at spb228@cornell.edu.
+I am a current Master of Engineering student at Cornell University majoring in Electrical and Computer Engineeering. My area of interests include robotics, automotives, embedded systems, microcontrollers, hardware, and power systems. I can be reached at rg764@cornell.edu.
 
-<img src="./images/spb.jpg" width="300" height="300" alt="hi" class="inline"/>
+<img src="./images/rg.jpg" width="300" height="300" alt="hi" class="inline"/>
 
 ## Course Description:
-ECE 5960 - Design and Implementation of Fast Robots focuses on systems level design and implementation of dynamic autonomous robots. The course revolves around designing and building a fast autonomous car, while exploring reactive control on an embedded processor, sensors, dynamic behaviors, and acting forces. The topics covered include embedded systems design using C++ and Python, robot controls, sensors (passive/active), signal processing and filtering, communication (bluetooth, i2C, serial), and planning and search algorithms. 
+ECE 5160 - Fast Robots focuses on systems level design and implementation of dynamic autonomous robots. The course revolves around designing and building a fast autonomous car, while exploring reactive control on an embedded processor, sensors, dynamic behaviors, and acting forces. The topics covered include embedded systems design using C++ and Python, robot controls, sensors (passive/active), signal processing and filtering, communication (bluetooth, i2C, serial), and planning and search algorithms. 
 
 ## Labs:
 [Lab 1 - Artemis](./Labs/Lab 1 - Artemis.md) <br/>
