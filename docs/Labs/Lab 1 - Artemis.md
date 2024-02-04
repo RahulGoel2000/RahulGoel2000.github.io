@@ -70,7 +70,7 @@ Tried whistling or speaking to change the highest frequency.
   Set the board to turn on the LED when you play a musical "A" note over the speaker and off otherwise. To achieve this we used if else statements with condition if the loudest frequency is between 430 to 450 hz turn on the LED as A note is 440 hz.
   <br> To generate the sound, use your phone, computer, or similar device. 
   
-<img src="./images/Lab1_microphoneLED.png" width="300" height="300" alt="hi" class="inline"/>
+<img src="./images/microphoneled.png" width="300" height="300" alt="hi" class="inline"/>
   
   <iframe width="560" height="315" src="https://www.youtube.com/embed/p8rEJC6NspE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
