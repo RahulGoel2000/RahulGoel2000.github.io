@@ -1,5 +1,5 @@
 ---
-title: Lab 1 - Artemis Board (Part 1)
+title: Lab 1 (Part 1) - Artemis
 ---
 # Author: Rahul Goel (NetID: rg764)
 ---
@@ -29,7 +29,7 @@ Installing the Arduino IDE is the first step. Next, use the USB cord to connect 
 #### Blink It Up Example
   
 Once the system is configured, go to File, Examples, 01. 
-<br>
+<br><br>
 Basics, and open Blink. Analyze the software and select Upload from the toolbar. The Blink program activates the onboard blue LED. The algorithm toggles the LED on and off every 1000 milliseconds. 
 
   <iframe width="560" height="315" src="https://youtube.com/embed/0lHtGvrbmSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -40,15 +40,15 @@ Basics, and open Blink. Analyze the software and select Upload from the toolbar.
   
 Select File, Examples, Apollo 3, and open Example04_Serial. 
  
+<img src="./../images/serial.png" width="300" height="300" alt="hi" class="inline"/>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QihvJWqAIBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
 #### AnalogRead Example
   
 Select File, Examples, Apollo 3, and open Example02_AnalogRead.
-<br>
+<br><br>
 AnalogRead uses the on-board ADC (analog to digital converter) to read analog voltages ranging from 0 to 2 volts. The ADC channel measures the internal die temperature, as well as the VCC and VSS voltages. Furthermore, the program is intended to fade the on-board LED to match the voltage measurement on the corresponding analog pin. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DYHK7XCOs5g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -58,7 +58,7 @@ AnalogRead uses the on-board ADC (analog to digital converter) to read analog vo
 #### MicrophoneOutput Example
   
 Select File, Examples, PDM, and open Example1_MicrophoneOutput.
-<br>
+<br><br>
 Tried whistling or speaking to change the highest frequency.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w4gW0oxudmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -68,9 +68,9 @@ Tried whistling or speaking to change the highest frequency.
 #### Microphone_LED
   
   Set the board to turn on the LED when you play a musical "A" note over the speaker and off otherwise. To achieve this we used if else statements with condition if the loudest frequency is between 430 to 450 hz turn on the LED as A note is 440 hz.
-  <br> To generate the sound, use your phone, computer, or similar device. 
+  <br><br> To generate the sound, use your phone, computer, or similar device. 
   
-<img src="./images/microphoneled.png" width="300" height="300" alt="hi" class="inline"/>
+<img src="./../images/microphoneled.png" width="300" height="300" alt="hi" class="inline"/>
   
   <iframe width="560" height="315" src="https://www.youtube.com/embed/p8rEJC6NspE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
