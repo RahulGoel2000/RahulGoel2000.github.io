@@ -40,7 +40,7 @@ Basics, and open Blink. Analyze the software and select Upload from the toolbar.
   
 Select File, Examples, Apollo 3, and open Example04_Serial. 
  
-<img src="./../images/serial.png" width="300" height="300" alt="hi" class="inline"/>
+<img src="./../images/serial.png" height="300" alt="hi" class="inline"/>
 
 
 ---
