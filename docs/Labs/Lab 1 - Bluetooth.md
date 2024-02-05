@@ -32,34 +32,45 @@ As part of the pre-lab setup, we created a virtual environment on our laptops (I
 <img src="./../images/Lab1/ardMacAddr.png" height="300" alt="image1" class="inline"/>
 ---
 
-#### Task 1 – Send an ECHO Command
+#### ECHO Command
 
 The first task involves sending an “ECHO” command with a string value from the computer to the Artemis. The Artemis then receives the command and sends an augmented string back to the computer. As show in the images below, CMD.ECHO is utilized to send a string (HiHello) to the robot (Artemis). The Artemis then sends the string back to the computer (Robot Says -> HiHello (Received From Robot)).   
 
-<img src="../images/Lab1/ard_cmd.png" height="300" alt="hi" class="inline"/> 
+<img src="../images/Lab1/ard_cmd.png" height="200" alt="hi" class="inline"/> 
+
 <img src="../images/Lab1/ard_echo.png" height="300" alt="image1" class="inline"/>
 
-
-<img src="../images/Lab1/jup_echo.png" height="300" alt="hi" class="inline"/>
-
-
+<img src="../images/Lab1/jup_echo.png" height="150" alt="hi" class="inline"/>
 
 
 ---
 
-#### Task 2 – Send Three Floats
+#### GET_TIME_MILLIS Command
 
-Task 2 involves sending three float values to the Artemis board using the SEND_THREE_FLOATS command. “ble.send_command” is utilized to transmit three float values to the Artemis. The Artemis extracts the values using “robot_cmd.get_next_value”. The images below display the program and the serial output in detail.  
+The command requested the current time from the Artemis board. This required using the Arduino package's millis() method, converting and storing the result as a double, and passing it as a string to Python.   
 
-<img src="../images/Lab2/Task2_ino.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab1/Getmil_ard.png" width="300" alt="hi" class="inline"/>
 
-<img src="../images/Lab2/Task2_serial.JPG" width="300" height="10" alt="hi" class="inline"/>
+** time_measure is a variable with double as datatype. Created to automatically typecast millis(), which outputs a long long.
 
-<img src="../images/Lab2/Task2_jupyter.JPG" width="300" height="30" alt="hi" class="inline"/>
+<img src="../images/Lab1/Getmil_jup.png" width="300" alt="hi" class="inline"/>
+
+
   
 
 ---
+#### GET_TIME_MILLIS Command
 
+Task 2 involves sending three float values to the Artemis board using the SEND_THREE_FLOATS command. “ble.send_command” is utilized to transmit three float values to the Artemis. The Artemis extracts the values using “robot_cmd.get_next_value”. The images below display the program and the serial output in detail.  
+
+<img src="../images/Lab1/Task2_ino.JPG" width="300" height="300" alt="hi" class="inline"/>
+
+<img src="../images/Lab1/Task2_serial.JPG" width="300" height="10" alt="hi" class="inline"/>
+
+<img src="../images/Lab1/Task2_jupyter.JPG" width="300" height="30" alt="hi" class="inline"/>
+
+
+---
 #### Task 3 – Notification Handler
  
 A notification handler is setup to receive float values from the Artemis board. In the callback function, a float value is stored as a global variable such that it is updated every time the characteristic value changes. This eliminates the need to utilize the receive_float() function. 
