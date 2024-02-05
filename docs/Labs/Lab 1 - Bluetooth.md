@@ -27,20 +27,22 @@ The purpose of this lab is to learn about the Bluetooth implementation used to c
 
 As part of the pre-lab setup, we created a virtual environment on our laptops (I'm running Windows 10) and installed the necessary Python libraries. We also changed the UUID and mac addresses at certain positions in the code files as instructed in the instructions to allow our Artemis board to connect to our laptops.
 
-<img src="./../images/Lab1/virtualEnv.png" height="100" alt="image1" class="inline"/>
+<img src="./../images/Lab1/virtualEnv.png" height="300" alt="image1" class="inline"/>
 
-<img src="./../images/Lab1/ardMacAddr.png" height="100" alt="image1" class="inline"/>
+<img src="./../images/Lab1/ardMacAddr.png" height="300" alt="image1" class="inline"/>
 ---
 
 #### Task 1 – Send an ECHO Command
 
-The first task involves sending an “ECHO” command with a string value from the computer to the Artemis. The Artemis then receives the command and sends an augmented string back to the computer. As show in the images below, CMD.ECHO is utilized to send a string (HiHello) to the robot (Artemis). The Artemis then sends the string back to the computer (SPB’s Robot Says -> HiHello SPB’s Robot (Received From Robot)).   
- 
-<img src="../images/Lab1/ard_echo.png" height="100" alt="image1" class="inline"/>
+The first task involves sending an “ECHO” command with a string value from the computer to the Artemis. The Artemis then receives the command and sends an augmented string back to the computer. As show in the images below, CMD.ECHO is utilized to send a string (HiHello) to the robot (Artemis). The Artemis then sends the string back to the computer (Robot Says -> HiHello (Received From Robot)).   
 
-<img src="../images/Lab1/jup_echo.png" alt="hi" class="inline"/>
+<img src="../images/Lab1/ard_cmd.png" height="300" alt="hi" class="inline"/> 
+<img src="../images/Lab1/ard_echo.png" height="300" alt="image1" class="inline"/>
 
-<img src="../images/Lab1/ard_cmd.png" alt="hi" class="inline"/>
+
+<img src="../images/Lab1/jup_echo.png" height="300" alt="hi" class="inline"/>
+
+
 
 
 ---
