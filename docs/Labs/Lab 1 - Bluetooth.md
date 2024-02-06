@@ -1,10 +1,10 @@
 ---
 title: Lab 2 – Bluetooth
 ---
-# Author: Swapnil Barot (NetID: spb228)
+# Author: Rahul Goel (NetID: rg764)
 ---
 
-[Return to Main Page](https://spbarot.github.io/)
+[Return to Main Page](https://rahulgoel2000.github.io/)
 
 ## I. Objective
 
@@ -49,39 +49,31 @@ The first task involves sending an “ECHO” command with a string value from t
 
 The command requested the current time from the Artemis board. This required using the Arduino package's millis() method, converting and storing the result as a double, and passing it as a string to Python.   
 
-<img src="../images/Lab1/Getmil_ard.png" width="300" alt="hi" class="inline"/>
+<img src="../images/Lab1/Getmil_ard.png" width="500" alt="hi" class="inline"/>
 
 ** time_measure is a variable with double as datatype. Created to automatically typecast millis(), which outputs a long long.
 
-<img src="../images/Lab1/Getmil_jup.png" width="300" alt="hi" class="inline"/>
+<img src="../images/Lab1/Getmil_jup.png" width="500" alt="hi" class="inline"/>
 
-
-  
-
----
-#### GET_TIME_MILLIS Command
-
-Task 2 involves sending three float values to the Artemis board using the SEND_THREE_FLOATS command. “ble.send_command” is utilized to transmit three float values to the Artemis. The Artemis extracts the values using “robot_cmd.get_next_value”. The images below display the program and the serial output in detail.  
-
-<img src="../images/Lab1/Task2_ino.JPG" width="300" height="300" alt="hi" class="inline"/>
-
-<img src="../images/Lab1/Task2_serial.JPG" width="300" height="10" alt="hi" class="inline"/>
-
-<img src="../images/Lab1/Task2_jupyter.JPG" width="300" height="30" alt="hi" class="inline"/>
 
 
 ---
-#### Task 3 – Notification Handler
+
+#### Notification Handler
  
-A notification handler is setup to receive float values from the Artemis board. In the callback function, a float value is stored as a global variable such that it is updated every time the characteristic value changes. This eliminates the need to utilize the receive_float() function. 
+To be able to collect data without having to explicitly call it, a Python notification handler was created to automatically receive the data. 
 
-<img src="../images/Lab2/Task3_jupyter.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab1/notification.png" width="300" alt="hi" class="inline"/>
 
 ---
 
-#### Task 4 – BLEFloat VS BLEString
+#### Gets the current time in millisecond for few seconds
 
-Receiving a float value in python using receive_float() / BLEFloatCharacteristic enables python to directly receive a float value as a byte array (as transmitted by Artemis). On the other hand, using receive_string() / BLECStringCharacteristic forces python to convert the characters to floats in a byte array. The first option (float) requires 4 bytes (per float) while the second option (string) requires 1 byte (per character). Thus, the float values are more memory expensive, however, can lead to more precision.  It shall be noted that both options produce similar results. 
+On the arduino side created a loop which kept sending the timestamp using millis for continuous five seconds. recrded the data on the python end and tried to calculate the effective data transfer rate. In these case there was some gap between continuos messages being send because of the time consumed each time by the millis() function.
+
+<img src="../images/Lab1/get_millis_5s_ard.png" width="300" alt="hi" class="inline"/>
+<img src="../images/Lab1/get_millis_5s_jup.png" width="300" alt="hi" class="inline"/>
+<img src="../images/Lab1/get_millis_5s_2.png" width="300" alt="hi" class="inline"/>
 
 ---
 
@@ -123,7 +115,7 @@ Please refer to respective tasks in Section III - Procedure/Design/Results for t
 
 ---
 
-[Return to Main Page](https://spbarot.github.io/)
+[Return to Main Page](https://rahulgoel2000.github.io/)
 
 
 
