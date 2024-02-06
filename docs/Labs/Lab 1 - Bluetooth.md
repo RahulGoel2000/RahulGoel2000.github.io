@@ -39,8 +39,6 @@ The first task involves sending an “ECHO” command with a string value from t
 <img src="../images/Lab1/ard_echo.png" width="100%" alt="image1" class="inline"/>
 
 <img src="../images/Lab1/jup_echo.png" width="100%" alt="hi" class="inline"/>
-
-
 ---
 
 #### GET_TIME_MILLIS Command
@@ -52,8 +50,6 @@ The command requested the current time from the Artemis board. This required usi
 ** time_measure is a variable with double as datatype. Created to automatically typecast millis(), which outputs a long long.
 
 <img src="../images/Lab1/Getmil_jup.png" width="100%" alt="hi" class="inline"/>
-
-
 
 ---
 
@@ -73,6 +69,26 @@ On the arduino side created a loop which kept sending the timestamp using millis
 <img src="../images/Lab1/get_millis_5s_jup.png" width="100%" alt="hi" class="inline"/>
 <img src="../images/Lab1/get_millis_5s_2.png" width="100%" alt="hi" class="inline"/>
 
+---
+#### SEND_TIME_DATA command
+
+In the above part instead of getting the timestamp and sharing it every time in this we first created a array that stores time stamps for contiuous 5 seconds and then send all the data at ones.  
+
+<img src="../images/Lab1/send_time_data_ard.png" width="100%" alt="hi" class="inline"/>
+<img src="../images/Lab1/send_time_data_jup.png" width="100%" alt="hi" class="inline"/>
+<img src="../images/Lab1/send_time_data_2.png" width="100%" alt="hi" class="inline"/>
+
+---
+#### GET_TEMP_READINGS command
+
+In the case of SEND_TIME_DATA command along with time also made an array to store the temperature data at the corresponding timestaps and then transmit all the data at ones to the computer. On the python side split the temperature and time data and display them in a uniform manner.
+
+<img src="../images/Lab1/get_temp_reading_ard.png" width="100%" alt="hi" class="inline"/>
+<img src="../images/Lab1/get_temp_reading_jup.png" width="100%" alt="hi" class="inline"/>
+
+
+#### Limitation
+At 150Hz, 5 seconds of 16-bit values is 12,000 bits (150 * 5 * 16). The board has 384kB of RAM, or 3,072,000 bits (384 * 8000). This means that 256 sets of 5 second 16-bit values can be saved (3,072,000/12000). This assumes that all of the RAM is available, which is not the case; some space is given to the program; if we suppose that about 5% is filled up, we are down to approximately 243 sets.
 ---
 
 #### ECE 5960 Additional Tasks - Task 1 – Effective Data Rate
