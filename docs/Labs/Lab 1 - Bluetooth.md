@@ -89,6 +89,7 @@ In the case of SEND_TIME_DATA command along with time also made an array to stor
 
 #### Limitation
 At 150Hz, 5 seconds of 16-bit values is 12,000 bits (150 * 5 * 16). The board has 384kB of RAM, or 3,072,000 bits (384 * 8000). This means that 256 sets of 5 second 16-bit values can be saved (3,072,000/12000). This assumes that all of the RAM is available, which is not the case; some space is given to the program; if we suppose that about 5% is filled up, we are down to approximately 243 sets.
+
 ---
 
 #### Additional tasks for 5000: Effective Data Rate
