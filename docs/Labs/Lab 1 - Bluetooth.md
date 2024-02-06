@@ -1,5 +1,5 @@
 ---
-title: Lab 2 – Bluetooth
+title: Lab 1(Part-2) – Bluetooth
 ---
 # Author: Rahul Goel (NetID: rg764)
 ---
@@ -43,7 +43,7 @@ The first task involves sending an “ECHO” command with a string value from t
 
 #### GET_TIME_MILLIS Command
 
-The command requested the current time from the Artemis board. This required using the Arduino package's millis() method, converting and storing the result as a double, and passing it as a string to Python.   
+The command requested the current time from the Artemis board. This required using the Artemis package's millis() method, converting and storing the result as a double, and passing it as a string to Python.   
 
 <img src="../images/Lab1/Getmil_ard.png" width="100%" alt="hi" class="inline"/>
 
@@ -63,7 +63,7 @@ To be able to collect data without having to explicitly call it, a Python notifi
 
 #### Gets the current time in millisecond for few seconds
 
-On the arduino side created a loop which kept sending the timestamp using millis for continuous five seconds. recrded the data on the python end and tried to calculate the effective data transfer rate. In these case there was some gap between continuos messages being send because of the time consumed each time by the millis() function.
+On the artemis side created a loop which kept sending the timestamp using millis for continuous five seconds. recrded the data on the python end and tried to calculate the effective data transfer rate. In these case there was some gap between continuos messages being send because of the time consumed each time by the millis() function.
 
 <img src="../images/Lab1/get_millis_5s_ard.png" width="100%" alt="hi" class="inline"/>
 <img src="../images/Lab1/get_millis_5s_jup.png" width="100%" alt="hi" class="inline"/>
@@ -104,9 +104,9 @@ This task involves sending a message from the computer to receive a reply from t
 ---
 #### ECE 5960 Additional Tasks - Task 2 – Reliability
 
-The reliability of the data transfer is also tested. To test the reliability of the system, data was sent at a much higher rate from the robot (Artemis) to the computer. This was accomplished by shortening the Arduino interval time to 100 milliseconds (500 milliseconds is typical), and by increasing the baud rate to 1000000 from 115200. As shown in the image below, the output is very similar to the Effective Data Rate task output, signaling that the higher data rate has no significant effect on the reliability. 
+The reliability of the data transfer is also tested. To test the reliability of the system, we use the same code as the one used for SEND_TIME_DATA commad. If we look at the result in the following image we see that we have received all 500 messages, which are string containing timestamps are received without any data loss. The same test has been repeated with GET_TEMP_READINGS command and there we also receive all the messages sent from the artemis end. This result shows that the data transfer is very reliable even for high speed data transmission.
 
-<img src="../images/Lab2/Task5_output.JPG" width="300" height="300" alt="hi" class="inline"/>
+<img src="../images/Lab1/send_time_data_2.png" width="100%" alt="hi" class="inline"/>
 
 ---
 
@@ -115,21 +115,4 @@ The reliability of the data transfer is also tested. To test the reliability of 
 The goals of this lab were successfully satisfied as the experimenters utilized Bluetooth framework to interconnect the computer and the Artemis board. Knowledge gained in this lab will assist in utilizing Bluetooth in the future labs. The experiment was quite smooth, and the given references/guideline seemed to be very helpful. 
 
 ---
-
-## V. Code Appendix
-
-Please refer to respective tasks in Section III - Procedure/Design/Results for the code. 
-
----
-
-## VI. References
-
-1. [ECE 5960 – Lab 2 Guideline](https://cei-lab.github.io/ECE4960-2022/Lab2.html)
-2. [Jupyter Lab Tutorial](https://cei-lab.github.io/ECE4960-2022/tutorials/jupyter_notebooks.html)
-
----
-
-[Return to Main Page](https://rahulgoel2000.github.io/)
-
-
 
