@@ -47,7 +47,7 @@ The command requested the current time from the Artemis board. This required usi
 
 <img src="../images/Lab1/Getmil_ard.png" width="100%" alt="hi" class="inline"/>
 
-> time_measure is a variable with double as datatype. Created to automatically typecast millis(), which outputs a long long.
+time_measure is a variable with double as datatype. Created to automatically typecast millis(), which outputs a long long.
 
 <img src="../images/Lab1/Getmil_jup.png" width="100%" alt="hi" class="inline"/>
 
@@ -94,9 +94,9 @@ At 150Hz, 5 seconds of 16-bit values is 12,000 bits (150 * 5 * 16). The board ha
 #### Additional tasks for 5000: Effective Data Rate
 This operation entails delivering a message from the computer to Artemis and receiving a response, as well as computing the times and data rates for each event. To measure the data rate, the "performance_measurement" function is used, which sends and receives text while keeping track of time. The ensuing for-loop adds to the string with each iteration, increasing the package's byte size. This data is then recorded and calculated to determine the data rate (bytes per second), as illustrated in the photos below. 
 
-<img src="../images/Lab2/data_rate.png" width="100%" alt="hi" class="inline"/>
+<img src="../images/Lab1/data_rate.png" width="100%" alt="hi" class="inline"/>
 
-> Used the work of one of the past year students for this problem as reference. https://spbarot.github.io/Labs/Lab%202%20-%20Bluetooth.html
+Used the work of one of the past year students for this problem as reference. https://spbarot.github.io/Labs/Lab%202%20-%20Bluetooth.html
 
 ---
 #### Additional tasks for 5000: Reliability
