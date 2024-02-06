@@ -27,20 +27,18 @@ The purpose of this lab is to learn about the Bluetooth implementation used to c
 
 As part of the pre-lab setup, we created a virtual environment on our laptops (I'm running Windows 10) and installed the necessary Python libraries. We also changed the UUID and mac addresses at certain positions in the code files as instructed in the instructions to allow our Artemis board to connect to our laptops.
 
-<img src="./../images/Lab1/virtualEnv.png" height="300" alt="image1" class="inline"/>
-
-<img src="./../images/Lab1/ardMacAddr.png" height="300" alt="image1" class="inline"/>
+<img src="./../images/Lab1/virtualEnv.png" width="100%" alt="image1" class="inline"/>
 ---
 
 #### ECHO Command
 
 The first task involves sending an “ECHO” command with a string value from the computer to the Artemis. The Artemis then receives the command and sends an augmented string back to the computer. As show in the images below, CMD.ECHO is utilized to send a string (HiHello) to the robot (Artemis). The Artemis then sends the string back to the computer (Robot Says -> HiHello (Received From Robot)).   
 
-<img src="../images/Lab1/ard_cmd.png" height="200" alt="hi" class="inline"/> 
+<img src="../images/Lab1/ard_cmd.png" width="100%" alt="hi" class="inline"/> 
 
-<img src="../images/Lab1/ard_echo.png" height="300" alt="image1" class="inline"/>
+<img src="../images/Lab1/ard_echo.png" width="100%" alt="image1" class="inline"/>
 
-<img src="../images/Lab1/jup_echo.png" height="150" alt="hi" class="inline"/>
+<img src="../images/Lab1/jup_echo.png" width="100%" alt="hi" class="inline"/>
 
 
 ---
@@ -49,11 +47,11 @@ The first task involves sending an “ECHO” command with a string value from t
 
 The command requested the current time from the Artemis board. This required using the Arduino package's millis() method, converting and storing the result as a double, and passing it as a string to Python.   
 
-<img src="../images/Lab1/Getmil_ard.png" width="500" alt="hi" class="inline"/>
+<img src="../images/Lab1/Getmil_ard.png" width="100%" alt="hi" class="inline"/>
 
 ** time_measure is a variable with double as datatype. Created to automatically typecast millis(), which outputs a long long.
 
-<img src="../images/Lab1/Getmil_jup.png" width="500" alt="hi" class="inline"/>
+<img src="../images/Lab1/Getmil_jup.png" width="100%" alt="hi" class="inline"/>
 
 
 
@@ -63,7 +61,7 @@ The command requested the current time from the Artemis board. This required usi
  
 To be able to collect data without having to explicitly call it, a Python notification handler was created to automatically receive the data. 
 
-<img src="../images/Lab1/notification.png" width="300" alt="hi" class="inline"/>
+<img src="../images/Lab1/notification.png" width="100%" alt="hi" class="inline"/>
 
 ---
 
@@ -71,9 +69,9 @@ To be able to collect data without having to explicitly call it, a Python notifi
 
 On the arduino side created a loop which kept sending the timestamp using millis for continuous five seconds. recrded the data on the python end and tried to calculate the effective data transfer rate. In these case there was some gap between continuos messages being send because of the time consumed each time by the millis() function.
 
-<img src="../images/Lab1/get_millis_5s_ard.png" width="300" alt="hi" class="inline"/>
-<img src="../images/Lab1/get_millis_5s_jup.png" width="300" alt="hi" class="inline"/>
-<img src="../images/Lab1/get_millis_5s_2.png" width="300" alt="hi" class="inline"/>
+<img src="../images/Lab1/get_millis_5s_ard.png" width="100%" alt="hi" class="inline"/>
+<img src="../images/Lab1/get_millis_5s_jup.png" width="100%" alt="hi" class="inline"/>
+<img src="../images/Lab1/get_millis_5s_2.png" width="100%" alt="hi" class="inline"/>
 
 ---
 
