@@ -96,7 +96,6 @@ This operation entails delivering a message from the computer to Artemis and rec
 
 <img src="../images/Lab1/data_rate.png" width="100%" alt="hi" class="inline"/>
 
-Used the work of one of the past year students for this problem as reference. https://spbarot.github.io/Labs/Lab%202%20-%20Bluetooth.html
 
 ---
 #### Additional tasks for 5000: Reliability
