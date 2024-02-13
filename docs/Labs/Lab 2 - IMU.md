@@ -85,6 +85,23 @@ Using a complementary filter of 0.1 and combining the accelerometer and gyroscop
 ---
 
 
+#### Sample data
+
+To confirm if IMU can run faster than the loop function, we cleared out the loop function as much as possible leaving only the data getting and storing part. Now, I created a counter which ensures that the data is getting stored till the number of data collected is 100. Once it reaches 100, I print the data, the idea of printing the data at the end is to ensure that no timee is wasted in Serial.print while recording, so that void loop() runs as fast as possible. As we look at the printed data, we find that each data in the array is different indicating that IMU produced new data every single time loop was running, showing that sampling rate of arduino is faster than the loop function.
+
+
+<img src="../images/Lab2/imu_loop.png" height="300" alt="hi" class="inline"/>
+
+
+In the second phase aimed at ensuring that Artemis can retain a minimum of 5 seconds' worth of data, I implemented a loop to store approximately 2000 data points received from the Arduino. I organized the information into seven arrays: three for accelerometer data, three for gyro data, and one for timestamp records. Subsequently, I transmitted the data to the Python side through the established Bluetooth connection. By calculating the difference between the timestamps of the last and first data points, I determined the duration for which the data was stored. The recorded time period amounted to 5284 milliseconds, meeting the specified requirements outlined in the laboratory instructions.
+
+<img src="../images/Lab2/sample_ard.png" height="300" alt="hi" class="inline"/>
+
+
+<img src="../images/Lab2/sample.png" height="300" alt="hi" class="inline"/>
+
+As seen in the code I prefer individual arrays on the artemis side to store data while transmit them as a single string. This helps me in easy manipulation of individual data as per need
+
 
 
 #### Stunt with the robot
