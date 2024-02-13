@@ -116,7 +116,7 @@ We assembled the robot with charged batteries and performed some stunts to confi
 
 ## IV. Conclusion
 
-The objectives of this lab were successfully completed. All the sensors were wired, tested, and equipped on the robot. The sensor programs created in this lab will assist in the future labs to autonomize the robot and capture the surroundings. This lab took roughly two weeks to complete due to soldering, as well as the several tasks associated with the sensors. Overall, the lab went quite smooth and the lab guideline proved to be very helpful. 
+The objectives of this lab were successfully completed. The IMU was wired, tested, and analysed as per the requirements and instructions. Overall, the lab went quite smooth and the lab guideline proved to be very helpful. 
 
 ---
 
