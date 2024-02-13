@@ -30,7 +30,7 @@ The objective of this lab is to add the IMU to our robot, start running the Arte
 
 Wires are connected from the Artemis Board to the IMU (Inertial Measurement Unit) Sensor using the connectors provided. 
 
-<img src="../images/Lab2/sensors_image.jpg" height="300" alt="image1" class="inline"/>
+<img src="../images/Lab2/sensor_image.jpg" height="300" alt="image1" class="inline"/>
     
 ---
 
@@ -83,6 +83,19 @@ Using a complementary filter of 0.1 and combining the accelerometer and gyroscop
 <img src="../images/Lab2/comp.png" height="300" alt="hi" class="inline"/>
 
 ---
+
+
+
+
+#### Stunt with the robot
+
+We assembled the robot with charged batteries and performed some stunts to confirm that each components of the robot works fine and to get the sense of the speed and working of the robot.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nuySM396kqE?si=Ye26eMkFOCjS7Dm-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+---
+
+
+
 
 ## IV. Conclusion
 
