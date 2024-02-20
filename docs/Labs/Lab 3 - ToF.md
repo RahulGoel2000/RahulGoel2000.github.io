@@ -84,7 +84,7 @@ In this part we actually try writing a code which takes sensor (ToF) data whenev
 
 ---
 
-### Sending the data to the python side and plotting it
+#### Sending the data to the python side and plotting it
 
 I started by creating a chunk of code on the artemis side which first store 200 continuous values from snsors in an array with time stamps and then send all the data to the python side. The code looks as follows:
 
