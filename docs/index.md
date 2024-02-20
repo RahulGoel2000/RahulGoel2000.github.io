@@ -16,4 +16,5 @@ ECE 5160 - Fast Robots focuses on systems level design and implementation of dyn
 [Lab 1(Part 1) - Artemis](./Labs/Lab 1 - Artemis.md) <br/>
 [Lab 1(Part 2) - Bluetooth](./Labs/Lab 1 - Bluetooth.md) <br/>
 [Lab 2 - IMU](./Labs/Lab 2 - IMU.md) <br/>
+[Lab 3 - IMU](./Labs/Lab 3 - ToF.md) <br/>
 <br/>
