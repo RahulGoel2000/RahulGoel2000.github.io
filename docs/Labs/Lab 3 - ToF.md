@@ -8,7 +8,7 @@ title: Lab 3 – ToF
 
 ## I. Objective
 
-The goal of this lab is to connect and analyse two time of flight sensors in order to find an object’s distance from the robot.
+<p>The goal of this lab is to connect and analyse two time of flight sensors in order to find an object’s distance from the robot.</p>
 ---
 
 ## II. Materials/Software
@@ -94,14 +94,14 @@ To check the accuracy and reliabiliy of the sensors I pasted the entire setup on
 <img src="../images/Lab3/10.jpg" alt="image1" class="inline"/>
 <img src="../images/Lab3/9.png" alt="image1" class="inline"/>
 
-Looking at the result, we can say that the data is very stable and accurate with little variation over time which is acceptable.In terms of reliability the number of datapoints received is 200 and continuous shwing the reliability of sensor as well as bluetooth connection. There is slight difference in the reading of the 2 sensors which I believe is mostly related to different positions and slight differenc in orientation of the sensors.
+<p> Looking at the result, we can say that the data is very stable and accurate with little variation over time which is acceptable.In terms of reliability the number of datapoints received is 200 and continuous shwing the reliability of sensor as well as bluetooth connection. There is slight difference in the reading of the 2 sensors which I believe is mostly related to different positions and slight differenc in orientation of the sensors.</p>
 ---
 
 #### Additional 5000 level: Infrared Transmission
 
 The TOF sensors used in this lab measure depth/distance using infrared light (lasers). The sensor sends out a signal that impacts an object (a wall) before returning to the sensor. The time it takes for the signal to return to the sensor is utilized to calculate the distance to the item. The advantages of an IR-based TOF sensor include small box size (form factor) and minimal environmental sensitivity. The disadvantages of this type of sensor include its high cost and low sample frequency. In contrast, amplitude-based infrared sensors detect distance rather than time. The benefits of such a sensor include cost and package size. The disadvantage of these sensors is vulnerability to the environment.
 
-In terms of impact of color, didn't had a chance to test the real stuff out with different color but as per discussions and my understanding I beleive that a complete black surface might be a problem for the sensor, as the black surfaces have the tendency to absorb infrared light beams.
+<p>In terms of impact of color, didn't had a chance to test the real stuff out with different color but as per discussions and my understanding I beleive that a complete black surface might be a problem for the sensor, as the black surfaces have the tendency to absorb infrared light beams.</p>
 ---
 
 
