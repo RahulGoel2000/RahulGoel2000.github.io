@@ -51,7 +51,7 @@ The oscilloscope reading now represents a square wave with a duty cycle of 31.4%
   analogWrite(12, 0);         // backward motion
 ```
 
-<img src="../images/Lab4/osci.jpg" width="300" alt="image1" class="inline"/>
+<img src="../images/Lab4/osci.jpg" width="600" alt="image1" class="inline"/>
 
 ---
 
@@ -91,7 +91,7 @@ While running the robot on the ground, it is evident that the motors do not spin
 <img src="../images/Lab4/calibrate.png" alt="image1" class="inline"/>
 
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/embed/_VWVb3J8hT0?si=3tQOqfciL0AoYTaT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/embed/_VWVb3J8hT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
