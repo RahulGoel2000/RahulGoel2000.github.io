@@ -165,7 +165,7 @@ As per the Arduino – analogWrite webpage, the PWM frequency for the Nano board
  
 ---
 
-
+<p>Moving onto finding the minimum duty cycle at which the robot can keep moving. Started the robot with set value of 32 and kept it on the ground. It was not moving. Tried pushing it a bit and it started to move. Not very straight but it was abl to move at this duty cycle.</p> 
 
 ---
 
@@ -174,7 +174,7 @@ As per the Arduino – analogWrite webpage, the PWM frequency for the Nano board
 
 The objective of this lab, to demonstrate an open loop control scheme was successfully satisfied. The knowledge gained from this lab in regards to programming the Artemis and interfacing with the dual motor drivers will be very useful in future labs. One issue encountered during the lab was the short battery life of the 850mAh battery (~ 9 minutes). In the future, it will be helpful to keep more batteries in the kit. Overall, the lab was quite smooth and the lab guideline seemed to very helpful. 
 
-<p>Moving onto finding the minimum duty cycle at which the robot can keep moving. Started the robot with set value of 32 and kept it on the ground. It was not moving. Tried pushing it a bit and it started to move. Not very straight but it was abl to move at this duty cycle.</p> 
+
 
 ---
 
