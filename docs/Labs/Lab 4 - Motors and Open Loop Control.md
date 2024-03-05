@@ -69,7 +69,7 @@ The car is taken apart to remove the off-the-shelf electronics components to be 
 
 After we have tested out 1 set of motors usig the oscilloscope and ensured that it works the way it should work. We do the same thing with other motor driver and the other set of motors and place all th components on the chasis. For the secnd motor controller the GPIO pins used included pins 7 and pin A5.  One TOF sensor is placed on the front of the car while the other is placed on the side of the chassis, between two wheels. The final schematic and chasis after the complete arrangement looks as below.
 
-<img src="../images/Lab4/car.jpg" alt="image1" class="inline"/>
+<img src="../images/Lab4/schematic.jpg" alt="image1" class="inline"/>
 
 <img src="../images/Lab4/car.jpg" alt="image1" class="inline"/>
 
@@ -102,75 +102,20 @@ While running the robot on the ground, it is evident that the motors do not spin
 #### Open Loop Control
 
 The robot is programmed to demonstrate open lop control by cycling through the following movement loop: 
-*  Go forward for 1 second
+*  Go forward
 * Stop
-* Turn right for 1 second
+* Turn right by 120 degrees
 * Stop
-* Go forward for 1 second
+* Go forward
 * Stop
-* Turn right for 1 second
-* Stop
-* Go forward for 1 second
+
 
 ``` 
-  // forward
-  analogWrite(A0, 65);     // left motor, forward motion
-  analogWrite(A14, 60);    // right motor, forward motion
-  
-  delay(1000);    // move forward for 3 seconds
 
-  // stop
-  analogWrite(A0, 0);       
-  analogWrite(A14, 0);
-
-  delay(2000);   
-
-  // turn right 
-  analogWrite(A0, 150);       
-  analogWrite(A14, 30);
-
-  delay (1000);              
-
-  // stop
-  analogWrite(A0, 0);       
-  analogWrite(A14, 0);
-
-  delay(2000);   
-
-  // forward
-  analogWrite(A0, 65);    
-  analogWrite(A14, 60);    
-  
-  delay(1000);               
-
-  // stop
-  analogWrite(A0, 0);       
-  analogWrite(A14, 0);
-
-  delay(2000);   
-
-  //turn right 
-  
-  analogWrite(A0, 150);       
-  analogWrite(A14, 30);
-
-  delay (1000);             
-
-  // stop
-  analogWrite(A0, 0);       
-  analogWrite(A14, 0);
-
-  delay(2000);   
-
-  // forward
-  analogWrite(A0, 65);     
-  analogWrite(A14, 60);    
-  
-  delay(1000);
 ```
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/erF1TMNzm_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L9quZGARVdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
@@ -179,7 +124,7 @@ The robot is programmed to demonstrate open lop control by cycling through the f
 
 
 
-#### Task 11 – Additional Task: AnalogWrite Frequency
+#### Additional Task: AnalogWrite Frequency
 
 As per the Arduino – analogWrite webpage, the PWM frequency for the Nano board is 490 Hz [3]. The motor driver’s internal PWM frequency is 50 kHz, as seen on the motor driver cut sheet [2].  Manually configuring the timers to generate a faster PWM output will cause the motors to spin faster, increasing the speed of the robot. Increasing the PWM output will also provide greater control over the movements of the robot, and we will be able to send more signals in a time segment.
  
