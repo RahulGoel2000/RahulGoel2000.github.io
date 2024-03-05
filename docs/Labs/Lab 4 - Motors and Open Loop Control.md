@@ -69,7 +69,7 @@ The car is taken apart to remove the off-the-shelf electronics components to be 
 
 After we have tested out 1 set of motors usig the oscilloscope and ensured that it works the way it should work. We do the same thing with other motor driver and the other set of motors and place all th components on the chasis. For the secnd motor controller the GPIO pins used included pins 7 and pin A5.  One TOF sensor is placed on the front of the car while the other is placed on the side of the chassis, between two wheels. The final schematic and chasis after the complete arrangement looks as below.
 
-<img src="../images/Lab4/schematic.jpg" alt="image1" class="inline"/>
+<img src="../images/Lab4/schematic.png" alt="image1" class="inline"/>
 
 <img src="../images/Lab4/car.jpg" alt="image1" class="inline"/>
 
@@ -91,7 +91,7 @@ While running the robot on the ground, it is evident that the motors do not spin
 <img src="../images/Lab4/calibrate.png" alt="image1" class="inline"/>
 
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/embed/_VWVb3J8hT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/_VWVb3J8hT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
