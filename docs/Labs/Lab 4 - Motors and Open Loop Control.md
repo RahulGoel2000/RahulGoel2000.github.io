@@ -107,10 +107,45 @@ The robot is programmed to demonstrate open lop control by cycling through the f
 * Turn right by 120 degrees
 * Stop
 * Go forward
-* Stop
 
 
 ``` 
+//forward
+  analogWrite(11, 76);     
+  analogWrite(12, 0); 
+  analogWrite(7, 70);     
+  analogWrite(A5, 0);
+
+  delay(2000);
+//Stop
+  analogWrite(11, 0);     
+  analogWrite(12, 0); 
+  analogWrite(7, 0);     
+  analogWrite(A5, 0);
+  
+  delay(2000)
+//right
+  analogWrite(11, 76);     
+  analogWrite(12, 0); 
+  analogWrite(7, 0);     
+  analogWrite(A5, 0);
+  
+  delay(2000)
+//Stop
+  analogWrite(11, 0);     
+  analogWrite(12, 0); 
+  analogWrite(7, 0);     
+  analogWrite(A5, 0);
+  
+  delay(2000)
+//forward
+  analogWrite(11, 76);     
+  analogWrite(12, 0); 
+  analogWrite(7, 70);     
+  analogWrite(A5, 0);
+
+  delay(2000);
+
 
 ```
 
@@ -139,6 +174,7 @@ As per the Arduino – analogWrite webpage, the PWM frequency for the Nano board
 
 The objective of this lab, to demonstrate an open loop control scheme was successfully satisfied. The knowledge gained from this lab in regards to programming the Artemis and interfacing with the dual motor drivers will be very useful in future labs. One issue encountered during the lab was the short battery life of the 850mAh battery (~ 9 minutes). In the future, it will be helpful to keep more batteries in the kit. Overall, the lab was quite smooth and the lab guideline seemed to very helpful. 
 
+Moving onto finding the minimum duty cycle at which the robot can keep moving. Started the robot with set value of 32 and kept it on the ground. It was not moving. Tried pushing it a bit and it started to move. Not very straight but it was abl to move at this duty cycle. 
 ---
 
 ## V. References
