@@ -114,7 +114,7 @@ Below are the Distance VS Time and Motor Input VS Time graphs for Test Run 3 (vi
 The speed at which ToF provides data is slow and to enhance it linear interpolation was introduced. The interpolation method allowed the measuremnet reading to be used whenever it was ready else used the past measurements to get a probable value of distance to get the error for the pid.
 
 ```
-sens2_int_val = (((secondlast_val2 - last_val2)/(secondlast_time2 - last_time2))*(time_[loop_]-last_time2))*0 + last_val2;
+sens2_int_val = (((secondlast_val2 - last_val2)/(secondlast_time2 - last_time2))*(time_[loop_]-last_time2)) + last_val2;
 
 ```
 
