@@ -118,6 +118,7 @@ sens2_int_val = (((secondlast_val2 - last_val2)/(secondlast_time2 - last_time2))
 
 ```
 
+<img src="../images/Lab5/inter.jpg" width="500" alt="image1" class="inline"/>
 
 #### Proportional Controller Range Reasonable Range
 
